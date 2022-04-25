@@ -1,0 +1,103 @@
+// Variables
+
+// Colores
+$colorUno:rgb(220, 20, 110);
+$colorDos: #fff;
+$colorTres: black;
+
+// Fondos
+$fondoUno: rgb(253, 235, 244); 
+
+// Gradientes
+$gradUno:linear-gradient(
+    -225deg,
+    #7058c5 0%,
+    #dc3882 29%,
+    #ff3f7f 67%,
+    #fff800 100%
+  ); 
+
+// Tipografias
+
+$fontRoboto: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+
+
+// Estructura
+
+/* Body*/
+
+#body {
+    background-color: $fondoUno; 
+
+}
+/* Header*/
+
+.navbar-brand {
+    color: $colorUno;
+}
+#navbarNav {
+    font-size: large;
+    
+}
+
+/*Index*/
+/* Article */
+
+.animate-charcter {
+   text-transform: uppercase;
+  background-image: $gradUno; 
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: $colorDos;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 40px;
+      font-style: bold;
+      text-align: center;
+      padding-top: 40px;
+      .imperdibles {
+        font-family: $fontRoboto;
+        font-size: 40px;
+        font-style: bold;
+        text-align: center;
+        padding-top: 40px;
+      }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.eleji { 
+  font-family: $fontRoboto;
+  font-size: 30px;
+  font-style: bold;
+  color: $colorTres;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+/* Section */
+
+.section-index {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+  .col:hover {
+    transform: translateY(-15px);
+    padding-bottom: 50px;
+  }
+}
+
+/* Footer */
+
+
+
+
